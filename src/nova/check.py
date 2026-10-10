@@ -55,7 +55,7 @@ def main() -> int:
         r = client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": "Greet Sara from Nova Travel in one short sentence."}],
-            max_tokens=40,
+            max_tokens=400,  # room for models that think before they answer
         )
     except APIError as e:
         status = getattr(e, "status_code", None)
@@ -69,7 +69,7 @@ def main() -> int:
     except Exception as e:  # network errors, Ollama not running, ...
         return fail("Connection", str(e)[:120], "check your internet connection (Ollama: is the Ollama app running?)")
 
-    reply = (r.choices[0].message.content or "").strip()
+    reply = (r.choices[0].message.content or "").strip() or "(empty reply: run the check again)"
     tokens = r.usage.total_tokens if r.usage else "?"
     print(f"{OK} Connection works\n")
     print(f"Model reply: {reply}")
