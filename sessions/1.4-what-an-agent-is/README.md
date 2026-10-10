@@ -22,6 +22,7 @@ From the repository root:
     uv run python sessions/1.4-what-an-agent-is/refund_rule.py
     uv run python sessions/1.4-what-an-agent-is/ask_the_model.py        # John, 14 days before the trip
     uv run python sessions/1.4-what-an-agent-is/ask_the_model.py 30     # John, 30 days before the trip
+    uv run python sessions/1.4-what-an-agent-is/ask_the_model.py 10     # John, 10 days before the trip
 
 `workflow.py` and `agent.py` also take another message, for example:
 
