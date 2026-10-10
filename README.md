@@ -36,6 +36,6 @@ Our example company in every session is **Nova Travel**, a small online travel a
 |---|---|---|---|
 | OpenAI (paid) | `sk-...` | *(keep the line commented out)* | `gpt-4o-mini` |
 | OpenRouter (one key, many models, some free) | `sk-or-...` | `https://openrouter.ai/api/v1` | `openai/gpt-4o-mini` |
-| Ollama (free, on your computer) | `ollama` | `http://localhost:11434/v1` | `qwen3:4b` |
+| Ollama (free, on your computer) | `ollama` | `http://localhost:11434/v1` | `llama3.2:3b` |
 
 Set a monthly spend limit in your provider's dashboard. Never share or commit your `.env` file.
