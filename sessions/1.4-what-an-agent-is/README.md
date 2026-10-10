@@ -20,8 +20,8 @@ From the repository root:
     uv run python sessions/1.4-what-an-agent-is/workflow.py
     uv run python sessions/1.4-what-an-agent-is/agent.py
     uv run python sessions/1.4-what-an-agent-is/refund_rule.py
-    uv run python sessions/1.4-what-an-agent-is/ask_the_model.py        # Omar, 14 days before the trip
-    uv run python sessions/1.4-what-an-agent-is/ask_the_model.py 30     # Omar, 30 days before the trip
+    uv run python sessions/1.4-what-an-agent-is/ask_the_model.py        # John, 14 days before the trip
+    uv run python sessions/1.4-what-an-agent-is/ask_the_model.py 30     # John, 30 days before the trip
 
 `workflow.py` and `agent.py` also take another message, for example:
 

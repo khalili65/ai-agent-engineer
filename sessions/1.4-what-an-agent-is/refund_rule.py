@@ -11,5 +11,5 @@ def refund_amount(price, reason, days_before_trip):
 
 if __name__ == "__main__":
     print("Sara, airline cancelled, 9 days before: ", refund_amount(640.00, "airline cancelled", 9))
-    print("Omar, changed mind, 30 days before:     ", refund_amount(380.00, "changed mind", 30))
-    print("Omar, changed mind, 14 days before:     ", refund_amount(380.00, "changed mind", 14))
+    print("John, changed mind, 30 days before:     ", refund_amount(380.00, "changed mind", 30))
+    print("John, changed mind, 14 days before:     ", refund_amount(380.00, "changed mind", 14))

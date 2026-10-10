@@ -14,7 +14,7 @@ RULES = ("Nova Travel refund rules: If the airline cancels, full refund. If the 
          "their mind more than 14 days before the trip, refund the price minus a 50 dollar fee. "
          "Otherwise, no refund.")
 DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 14
-CASE = {"price": 380.00, "reason": "changed mind", "days_before_trip": DAYS}  # Omar
+CASE = {"price": 380.00, "reason": "changed mind", "days_before_trip": DAYS}  # John
 
 start = time.perf_counter()
 print("Function:", refund_amount(**CASE), f"({(time.perf_counter() - start) * 1000:.3f} ms)")

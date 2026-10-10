@@ -4,7 +4,7 @@
 BOOKINGS = {
     "NT-4821": {"customer": "Sara", "trip": "Lisbon, 5 nights, flight + hotel", "price": 640.00,
                 "flight": "cancelled by the airline", "days_before_trip": 9},
-    "NT-5107": {"customer": "Omar", "trip": "Rome, 3 nights, hotel only", "price": 380.00,
+    "NT-5107": {"customer": "John", "trip": "Rome, 3 nights, hotel only", "price": 380.00,
                 "flight": "none", "days_before_trip": 30},
 }
 
