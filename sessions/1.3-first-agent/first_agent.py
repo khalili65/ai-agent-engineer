@@ -1,7 +1,6 @@
 """Session 1.3: your first agent. It looks up Sara's booking."""
 import json
 import os
-
 from dotenv import load_dotenv
 from openai import OpenAI
 
