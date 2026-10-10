@@ -61,6 +61,8 @@ def main() -> int:
         status = getattr(e, "status_code", None)
         if status == 401:
             return fail("Connection", "the provider did not accept your API key", "copy the key again from your provider's dashboard")
+        if status == 429:
+            return fail("Connection", "the model is busy right now (too many requests)", "wait one minute and try again, or choose another model (free models are often busy)")
         if status == 404:
             return fail("Connection", f'model not found: "{model}"', "check the model name in your .env file")
         return fail("Connection", str(e)[:120], "check your internet connection and your .env settings")

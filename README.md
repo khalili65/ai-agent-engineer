@@ -35,7 +35,9 @@ Our example company in every session is **Nova Travel**, a small online travel a
 | Provider | OPENAI_API_KEY | OPENAI_BASE_URL | MODEL |
 |---|---|---|---|
 | OpenAI (paid) | `sk-...` | *(keep the line commented out)* | `gpt-4o-mini` |
-| OpenRouter (one key, many models, some free) | `sk-or-...` | `https://openrouter.ai/api/v1` | `openai/gpt-4o-mini` |
+| OpenRouter (one key, many models, some free) | `sk-or-...` | `https://openrouter.ai/api/v1` | `openai/gpt-4o-mini`, or a free one such as `nvidia/nemotron-3-super-120b-a12b:free` |
 | Ollama (free, on your computer) | `ollama` | `http://localhost:11434/v1` | `llama3.2:3b` |
 
 Set a monthly spend limit in your provider's dashboard. Never share or commit your `.env` file.
+
+Free models on OpenRouter are sometimes busy. If the check says "too many requests", wait a minute or pick another free model.
