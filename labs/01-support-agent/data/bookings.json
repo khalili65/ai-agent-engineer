@@ -1,6 +1,12 @@
 {
   "NT-4821": {"customer": "Sara", "trip": "Lisbon, 5 nights, flight + hotel", "price": 640.0,
-              "flight": "cancelled by the airline", "days_before_trip": 9},
+              "days_before_trip": 9, "flight": "cancelled by the airline"},
   "NT-5107": {"customer": "John", "trip": "Rome, 3 nights, hotel only", "price": 380.0,
-              "flight": "none", "days_before_trip": 30}
+              "days_before_trip": 30, "flight": "none"},
+  "NT-5307": {"customer": "Tom", "trip": "Rome, 4 nights, flight + hotel", "price": 910.0,
+              "days_before_trip": 1, "flight": "on time"},
+  "NT-5582": {"customer": "Emma", "trip": "Barcelona, 4 nights, flight + hotel", "price": 560.0,
+              "days_before_trip": 45, "flight": "on time"},
+  "NT-6190": {"customer": "Lukas", "trip": "Paris, 3 nights, flight + hotel", "price": 720.0,
+              "days_before_trip": 10, "flight": "on time"}
 }

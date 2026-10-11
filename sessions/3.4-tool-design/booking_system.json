@@ -1,0 +1,437 @@
+{
+  "NT-4821": {
+    "booking_ref": "NT-4821",
+    "pnr": "K7QX2L",
+    "internal_id": "bk_01J9Z6Q4T8MZ4821",
+    "status": "CONFIRMED",
+    "channel": "web",
+    "currency": "USD",
+    "customer": {
+      "customer_id": "cus_48217",
+      "first_name": "Sara",
+      "email": "s***@example.com",
+      "language": "en",
+      "marketing_opt_in": false,
+      "loyalty_tier": "none"
+    },
+    "trip": {
+      "destination_city": "Lisbon",
+      "destination_iata": "LIS",
+      "nights": 5,
+      "product": "FLIGHT_HOTEL",
+      "start_date": "14 Nov",
+      "end_date": "19 Nov",
+      "days_to_departure": 9
+    },
+    "pricing": {
+      "list_price_cents": 72000,
+      "discount_cents": 8000,
+      "total_paid_cents": 64000,
+      "supplier_net_cost_cents": 51240,
+      "margin_cents": 12760,
+      "tax_included": true,
+      "promo_code": "AUTUMN10"
+    },
+    "payments": [
+      {
+        "payment_id": "pay_MZ4821",
+        "method": "card",
+        "card_last4": "4242",
+        "amount_cents": 64000,
+        "status": "captured",
+        "processor_ref": "ch_3PT8MZ4821"
+      }
+    ],
+    "segments": [
+      {
+        "type": "flight",
+        "carrier": "TP",
+        "flight_no": "TP1351",
+        "from": "BOS",
+        "to": "LIS",
+        "cabin": "Y",
+        "fare_basis": "QLOWUS",
+        "ticket_no": "047-2194468120",
+        "status_code": "XX"
+      },
+      {
+        "type": "flight",
+        "carrier": "TP",
+        "flight_no": "TP1352",
+        "from": "LIS",
+        "to": "BOS",
+        "cabin": "Y",
+        "fare_basis": "QLOWUS",
+        "ticket_no": "047-2194468121",
+        "status_code": "XX"
+      },
+      {
+        "type": "hotel",
+        "property_id": "htl_55102",
+        "name": "Hotel Alfama Garden",
+        "room_code": "DBL-STD",
+        "board": "BB",
+        "supplier": "hbx",
+        "supplier_conf": "HB-8812734",
+        "status_code": "HK"
+      }
+    ],
+    "audit_log": [
+      {
+        "event_id": "evt_4821_001",
+        "event": "booking.created",
+        "source": "web",
+        "actor": "system",
+        "message": "Booking created from cart"
+      },
+      {
+        "event_id": "evt_4821_002",
+        "event": "payment.authorized",
+        "source": "stripe",
+        "actor": "system",
+        "message": "Card authorized"
+      },
+      {
+        "event_id": "evt_4821_003",
+        "event": "payment.captured",
+        "source": "stripe",
+        "actor": "system",
+        "message": "Card captured"
+      },
+      {
+        "event_id": "evt_4821_004",
+        "event": "email.sent",
+        "source": "mailer",
+        "actor": "system",
+        "message": "Confirmation email sent (template conf_v7)"
+      },
+      {
+        "event_id": "evt_4821_005",
+        "event": "supplier.hotel.confirmed",
+        "source": "hbx",
+        "actor": "system",
+        "message": "Hotel confirmation number received"
+      },
+      {
+        "event_id": "evt_4821_006",
+        "event": "pricing.recalc",
+        "source": "pricing-svc",
+        "actor": "system",
+        "message": "Margin check passed"
+      },
+      {
+        "event_id": "evt_4821_007",
+        "event": "crm.sync",
+        "source": "crm",
+        "actor": "system",
+        "message": "Customer profile synced"
+      },
+      {
+        "event_id": "evt_4821_008",
+        "event": "email.opened",
+        "source": "mailer",
+        "actor": "system",
+        "message": "Confirmation email opened"
+      },
+      {
+        "event_id": "evt_4821_009",
+        "event": "reminder.scheduled",
+        "source": "scheduler",
+        "actor": "system",
+        "message": "Pre-trip reminder scheduled"
+      },
+      {
+        "event_id": "evt_4821_010",
+        "event": "fraud.check",
+        "source": "risk-svc",
+        "actor": "system",
+        "message": "Risk score 0.04, approved"
+      },
+      {
+        "event_id": "evt_4821_011",
+        "event": "supplier.flight.schedule_change",
+        "source": "gds",
+        "actor": "system",
+        "message": "SC received from TP, segments 1-2 status XX"
+      }
+    ]
+  },
+  "NT-5107": {
+    "booking_ref": "NT-5107",
+    "pnr": "M2RT8D",
+    "internal_id": "bk_01J9Z7B2K4RT5107",
+    "status": "CONFIRMED",
+    "channel": "web",
+    "currency": "USD",
+    "customer": {
+      "customer_id": "cus_51077",
+      "first_name": "John",
+      "email": "j***@example.com",
+      "language": "en",
+      "marketing_opt_in": false,
+      "loyalty_tier": "none"
+    },
+    "trip": {
+      "destination_city": "Rome",
+      "destination_iata": "FCO",
+      "nights": 3,
+      "product": "HOTEL_ONLY",
+      "start_date": "5 Dec",
+      "end_date": "8 Dec",
+      "days_to_departure": 30
+    },
+    "pricing": {
+      "list_price_cents": 38000,
+      "discount_cents": 0,
+      "total_paid_cents": 38000,
+      "supplier_net_cost_cents": 30020,
+      "margin_cents": 7980,
+      "tax_included": true,
+      "promo_code": null
+    },
+    "payments": [
+      {
+        "payment_id": "pay_RT5107",
+        "method": "card",
+        "card_last4": "4242",
+        "amount_cents": 38000,
+        "status": "captured",
+        "processor_ref": "ch_3PK4RT5107"
+      }
+    ],
+    "segments": [
+      {
+        "type": "hotel",
+        "property_id": "htl_77310",
+        "name": "Albergo Trevi Centrale",
+        "room_code": "DBL-STD",
+        "board": "BB",
+        "supplier": "hbx",
+        "supplier_conf": "HB-9920113",
+        "status_code": "HK"
+      }
+    ],
+    "audit_log": [
+      {
+        "event_id": "evt_5107_001",
+        "event": "booking.created",
+        "source": "web",
+        "actor": "system",
+        "message": "Booking created from cart"
+      },
+      {
+        "event_id": "evt_5107_002",
+        "event": "payment.authorized",
+        "source": "stripe",
+        "actor": "system",
+        "message": "Card authorized"
+      },
+      {
+        "event_id": "evt_5107_003",
+        "event": "payment.captured",
+        "source": "stripe",
+        "actor": "system",
+        "message": "Card captured"
+      },
+      {
+        "event_id": "evt_5107_004",
+        "event": "email.sent",
+        "source": "mailer",
+        "actor": "system",
+        "message": "Confirmation email sent (template conf_v7)"
+      },
+      {
+        "event_id": "evt_5107_005",
+        "event": "supplier.hotel.confirmed",
+        "source": "hbx",
+        "actor": "system",
+        "message": "Hotel confirmation number received"
+      },
+      {
+        "event_id": "evt_5107_006",
+        "event": "pricing.recalc",
+        "source": "pricing-svc",
+        "actor": "system",
+        "message": "Margin check passed"
+      },
+      {
+        "event_id": "evt_5107_007",
+        "event": "crm.sync",
+        "source": "crm",
+        "actor": "system",
+        "message": "Customer profile synced"
+      },
+      {
+        "event_id": "evt_5107_008",
+        "event": "email.opened",
+        "source": "mailer",
+        "actor": "system",
+        "message": "Confirmation email opened"
+      },
+      {
+        "event_id": "evt_5107_009",
+        "event": "reminder.scheduled",
+        "source": "scheduler",
+        "actor": "system",
+        "message": "Pre-trip reminder scheduled"
+      },
+      {
+        "event_id": "evt_5107_010",
+        "event": "fraud.check",
+        "source": "risk-svc",
+        "actor": "system",
+        "message": "Risk score 0.04, approved"
+      }
+    ]
+  },
+  "NT-6190": {
+    "booking_ref": "NT-6190",
+    "pnr": "P9LW3C",
+    "internal_id": "bk_01J9Z8C7N1LW6190",
+    "status": "CONFIRMED",
+    "channel": "web",
+    "currency": "USD",
+    "customer": {
+      "customer_id": "cus_61907",
+      "first_name": "Lukas",
+      "email": "l***@example.com",
+      "language": "en",
+      "marketing_opt_in": false,
+      "loyalty_tier": "none"
+    },
+    "trip": {
+      "destination_city": "Paris",
+      "destination_iata": "CDG",
+      "nights": 4,
+      "product": "FLIGHT_HOTEL",
+      "start_date": "12 Dec",
+      "end_date": "16 Dec",
+      "days_to_departure": 37
+    },
+    "pricing": {
+      "list_price_cents": 96000,
+      "discount_cents": 7000,
+      "total_paid_cents": 89000,
+      "supplier_net_cost_cents": 71880,
+      "margin_cents": 17120,
+      "tax_included": true,
+      "promo_code": "AUTUMN10"
+    },
+    "payments": [
+      {
+        "payment_id": "pay_LW6190",
+        "method": "card",
+        "card_last4": "4242",
+        "amount_cents": 89000,
+        "status": "captured",
+        "processor_ref": "ch_3PN1LW6190"
+      }
+    ],
+    "segments": [
+      {
+        "type": "flight",
+        "carrier": "AF",
+        "flight_no": "AF1235",
+        "from": "FRA",
+        "to": "CDG",
+        "cabin": "Y",
+        "fare_basis": "QLOWUS",
+        "ticket_no": "057-3381920455",
+        "status_code": "HK"
+      },
+      {
+        "type": "flight",
+        "carrier": "AF",
+        "flight_no": "AF1240",
+        "from": "CDG",
+        "to": "FRA",
+        "cabin": "Y",
+        "fare_basis": "QLOWUS",
+        "ticket_no": "057-3381920456",
+        "status_code": "HK"
+      },
+      {
+        "type": "hotel",
+        "property_id": "htl_31877",
+        "name": "Hotel Le Marais Nord",
+        "room_code": "DBL-STD",
+        "board": "BB",
+        "supplier": "hbx",
+        "supplier_conf": "HB-7710458",
+        "status_code": "HK"
+      }
+    ],
+    "audit_log": [
+      {
+        "event_id": "evt_6190_001",
+        "event": "booking.created",
+        "source": "web",
+        "actor": "system",
+        "message": "Booking created from cart"
+      },
+      {
+        "event_id": "evt_6190_002",
+        "event": "payment.authorized",
+        "source": "stripe",
+        "actor": "system",
+        "message": "Card authorized"
+      },
+      {
+        "event_id": "evt_6190_003",
+        "event": "payment.captured",
+        "source": "stripe",
+        "actor": "system",
+        "message": "Card captured"
+      },
+      {
+        "event_id": "evt_6190_004",
+        "event": "email.sent",
+        "source": "mailer",
+        "actor": "system",
+        "message": "Confirmation email sent (template conf_v7)"
+      },
+      {
+        "event_id": "evt_6190_005",
+        "event": "supplier.hotel.confirmed",
+        "source": "hbx",
+        "actor": "system",
+        "message": "Hotel confirmation number received"
+      },
+      {
+        "event_id": "evt_6190_006",
+        "event": "pricing.recalc",
+        "source": "pricing-svc",
+        "actor": "system",
+        "message": "Margin check passed"
+      },
+      {
+        "event_id": "evt_6190_007",
+        "event": "crm.sync",
+        "source": "crm",
+        "actor": "system",
+        "message": "Customer profile synced"
+      },
+      {
+        "event_id": "evt_6190_008",
+        "event": "email.opened",
+        "source": "mailer",
+        "actor": "system",
+        "message": "Confirmation email opened"
+      },
+      {
+        "event_id": "evt_6190_009",
+        "event": "reminder.scheduled",
+        "source": "scheduler",
+        "actor": "system",
+        "message": "Pre-trip reminder scheduled"
+      },
+      {
+        "event_id": "evt_6190_010",
+        "event": "fraud.check",
+        "source": "risk-svc",
+        "actor": "system",
+        "message": "Risk score 0.04, approved"
+      }
+    ]
+  }
+}

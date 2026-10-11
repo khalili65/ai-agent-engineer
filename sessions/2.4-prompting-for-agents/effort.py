@@ -15,11 +15,11 @@ Refund rules:
 - The customer changes their mind: refund minus a fee, only if it is more than 14 days before the trip.
   Otherwise, no refund."""
 
-TASK = """Today is 10 October 2026. Here are this morning's refund requests.
+TASK = """Today is 2 March. Here are this morning's refund requests.
 1. Sara, NT-4821, Lisbon. The airline cancelled her flight.
-2. Tom, NT-3307, Rome, trip starts 9 November. He changed his mind.
-3. Lena, NT-5150, Paris, trip starts 24 October. She changed her mind.
-4. Ravi, NT-6012, Athens, trip starts 25 October. He changed his mind.
+2. Tom, NT-3307, Rome, trip starts 1 April. He changed his mind.
+3. Lena, NT-5150, Paris, trip starts 16 March. She changed her mind.
+4. Ravi, NT-6012, Athens, trip starts 17 March. He changed his mind.
 For each request, write one short line: the name and full refund, refund minus a fee, or no refund."""
 
 # The correct answers, worked out by hand (Lena: exactly 14 days, Ravi: 15 days).

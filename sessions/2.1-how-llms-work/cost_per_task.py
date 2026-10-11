@@ -7,7 +7,7 @@ load_dotenv()
 client = OpenAI()
 
 # Dollars per 1 million tokens: (input, output).
-# From https://developers.openai.com/api/docs/pricing, checked on 10 Oct 2026. Prices change: check again.
+# From https://developers.openai.com/api/docs/pricing. Prices change often: check the page again.
 PRICES = {
     "gpt-6-astra": (10.00, 50.00),   # premium
     "gpt-6.1-sol": (2.00, 10.00),    # workhorse

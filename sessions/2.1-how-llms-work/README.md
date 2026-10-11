@@ -20,5 +20,5 @@ uv run python sessions/2.1-how-llms-work/cost_per_task.py
 - `cost_per_task.py` uses OpenAI models by default. To test other models, give their names:
   `uv run python sessions/2.1-how-llms-work/cost_per_task.py gpt-4o-mini`.
   On OpenRouter or Ollama, set `OPENAI_BASE_URL` and the key in `.env` first. A model that is not in the `PRICES` list counts as free.
-- **Prices change.** The `PRICES` list was copied from https://developers.openai.com/api/docs/pricing on 10 Oct 2026. Check the page and update the list before you trust the numbers.
+- **Prices change.** The `PRICES` list was copied from https://developers.openai.com/api/docs/pricing when this session was made. Check the page and update the list before you trust the numbers.
 - Some models think before they answer. Their hidden thinking tokens are paid as output tokens, so always compare the **cost per task**, not only the price per token.
