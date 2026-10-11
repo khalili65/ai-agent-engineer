@@ -11,7 +11,7 @@ For each failed trace we write down the **first** step that went wrong.
 | File | What it is |
 |---|---|
 | `agent.py`, `tools.py`, `trace_log.py` | the support agent v1, copied unchanged from `labs/01-support-agent/` |
-| `data/` | the refund rules and the policy from Lab 1, and more bookings (Olivia, Ben, Maria, Lina, Peter, Hana, Omar) |
+| `data/` | the refund rules and the policy from Lab 1, and more bookings (Olivia, Ben, Maria, Lina, Peter, Hana, Adam) |
 | `messages.jsonl` | the 40 customer messages of one day |
 | `collect_traces.py` | sends all 40 messages to the agent, in one process, like one day |
 | `traces/traces.jsonl` | the real traces of that day (same format as session 3.7 and Lab 1) |

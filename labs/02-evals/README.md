@@ -9,7 +9,7 @@ failure, prove the fix with numbers, and add an eval gate that can run in GitHub
 
 | File | Step | What it is |
 |---|---|---|
-| `agent/` | 1 | a copy of the Lab 1 agent (`agent.py`, `tools.py`, `trace_log.py`, `data/`) with three more bookings (Mia, Omar, Leo) |
+| `agent/` | 1 | a copy of the Lab 1 agent (`agent.py`, `tools.py`, `trace_log.py`, `data/`) with three more bookings (Mia, Noah, Leo) |
 | `inbox.jsonl` | 1 | 36 realistic customer messages from one week |
 | `collect.py` | 1 | runs the agent on every message and saves the traces in `traces/traces.jsonl` |
 | `read_traces.py` | 2 | prints every run in a short form, so a person can read it |

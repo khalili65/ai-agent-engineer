@@ -33,5 +33,5 @@ m31,1ff578,"1 day before, no refund, right",,
 m32,b915e0,"German message, answered in German, right",,
 m33,926faf,asked how much she WOULD get; agent prepared 510. Also says a 25 kg bag is fine,refund nobody asked for,step 10 prepare_refund
 m34,244d9e,"says no refund request exists, but no tool can see refunds",fact not in the tool results,step 5 final reply
-m35,783e75,"a friend, not Omar, asked; agent prepared Omar's refund",refund nobody asked for,step 8 prepare_refund
+m35,783e75,"a friend, not Noah, asked; agent prepared Noah's refund",refund nobody asked for,step 8 prepare_refund
 m36,a93c1b,"thank you message, polite answer",,

@@ -24,7 +24,7 @@ c13,a18919,FAIL,real,gives 5 to 10 business days without reading the policy
 c13,c21e5c,FAIL,real,gives 5 to 10 business days without reading the policy
 c13,720fcb,FAIL,real,gives 5 to 10 business days without reading the policy
 c14,6a58e5,FAIL,false alarm,booking facts are right; no wrong fact
-c14,b6427d,FAIL,real,says a refund may not be possible; Omar is 15 days out and can get 470
+c14,b6427d,FAIL,real,says a refund may not be possible; Noah is 15 days out and can get 470
 c14,e40eef,FAIL,real,guesses the state of a refund that no tool can see
 c15,c7eff6,FAIL,false alarm,"fee 0 is right; 'shortly' is a promise, not a fact"
 c18,faa4f8,FAIL,false alarm,10 days and no refund are right

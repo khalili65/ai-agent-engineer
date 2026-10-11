@@ -23,6 +23,6 @@
               "days_before_trip": 8, "flight": "none"},
   "NT-7120": {"customer": "Hana", "trip": "Athens, 5 nights, flight + hotel", "price": 830.0,
               "days_before_trip": 20, "flight": "cancelled by the airline"},
-  "NT-7133": {"customer": "Omar", "trip": "Berlin, 2 nights, flight + hotel", "price": 350.0,
+  "NT-7133": {"customer": "Adam", "trip": "Berlin, 2 nights, flight + hotel", "price": 350.0,
               "days_before_trip": 1, "flight": "delayed 5 hours"}
 }

@@ -11,7 +11,7 @@
               "days_before_trip": 10, "flight": "on time"},
   "NT-6634": {"customer": "Mia", "trip": "Vienna, 3 nights, hotel only", "price": 450.0,
               "days_before_trip": 14, "flight": "none"},
-  "NT-7018": {"customer": "Omar", "trip": "Amsterdam, 2 nights, flight + hotel", "price": 520.0,
+  "NT-7018": {"customer": "Noah", "trip": "Amsterdam, 2 nights, flight + hotel", "price": 520.0,
               "days_before_trip": 15, "flight": "on time"},
   "NT-7240": {"customer": "Leo", "trip": "Madrid, 4 nights, flight + hotel", "price": 830.0,
               "days_before_trip": 6, "flight": "cancelled by the airline"}
