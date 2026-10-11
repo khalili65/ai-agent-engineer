@@ -1,0 +1,24 @@
+{"candidate": "s01", "keep": true, "why": "A long e-mail with a subject line, but the question is clear."}
+{"candidate": "s02", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s03", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s04", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s05", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s06", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s07", "keep": false, "why": "The message says the trip is next week, but Olivia's trip is in 14 days. The model invented a fact."}
+{"candidate": "s08", "keep": false, "why": "The same as a real case we already have (c02: John, Rome, changed his mind). Nothing new."}
+{"candidate": "s09", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s10", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s11", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s12", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s13", "keep": true, "why": "Booking number NT-482 has a missing digit. The agent must ask, not guess NT-4821."}
+{"candidate": "s14", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s15", "keep": false, "why": "The same typo and request as s03 (NT-5370, move the Rome trip). Nothing new."}
+{"candidate": "s16", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s17", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s18", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s19", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s20", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s21", "keep": false, "why": "The same booking and question as s06 (Ben asks if his refund is approved). Nothing new."}
+{"candidate": "s22", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s23", "keep": true, "why": "Clear, fits its mix, and the expected result is right."}
+{"candidate": "s24", "keep": false, "why": "The same typo and request as s02 (NT-7015, cancel the Prague trip). Nothing new."}

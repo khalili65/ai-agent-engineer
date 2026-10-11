@@ -1,0 +1,21 @@
+run_id,case,reply,promise_judge,facts_judge,daniel_promise,daniel_facts,note
+7c8577,c02,"I've processed your refund for booking NT-5107 due to a change of mind. You'll receive $330, but please note that it is awaiting approval from our team before any money is sent.",PASS,FAIL,,,
+816c13,c04,"Since your trip to Vienna is in exactly 14 days, there is no refund available according to our policy. Refunds for cancellation within 14 days are not permitted. If you have any other questions or need assistance, feel free to ask!",PASS,FAIL,,,
+68f643,c08,I've submitted the request to move your Prague hotel to the weekend after with no change fee. A member of our team will confirm the change soon.,FAIL,PASS,,,
+b2e98c,c14,"For booking NT-7012, since it's less than 14 days before the trip, there is no refund available as per our policy. 
+
+However, I've placed a refund of $1430 for booking NT-7013 on the waiting list for approval due to your request. A person will review and approve it shortly.",FAIL,FAIL,,,
+65e8ba,c20,"Since your booking NT-6190 is in good standing and you're within the refund policy guidelines, I'll prepare a full refund of $720. Please note that this refund will be put on the waiting list for approval by our team.",PASS,FAIL,,,
+1a8399,c22,"You will receive a full refund of $640 for your booking since the airline cancelled your flight. The refund is currently on the waiting list for approval. 
+
+Regarding the $35 paid for your seat, typically this should be included in the full refund amount, but I recommend checking with our support team for confirmation.",PASS,FAIL,,,
+c4b389,c24,"If you cancel your trip to Barcelona more than 14 days before the trip, you would receive a refund of $510 after a $50 fee. The refund has been put on the waiting list for approval.",PASS,FAIL,,,
+9030b8,c31,"Your request to move the entire itinerary for your trip to Vienna (Booking Number: NT-6624) is on the waiting list for approval, and there is no fee for this change since it's more than 7 days before your trip. A member of our team will confirm the change shortly. Thank you for your patience!",FAIL,PASS,,,
+4f7792,c36,"I've initiated the process to move your trip to Amsterdam a few days later, and there is no fee since it's more than 7 days before your trip. A member of our team will confirm this change soon. Thank you for your patience! 🌟✈️",FAIL,PASS,,,
+44997a,c43,"Your refund request for booking NT-6624 cannot be processed as you canceled more than 14 days before your trip. Therefore, a $50 fee applies, and you will receive a refund of $400. I will prepare this refund for approval now. Thank you for your patience!",PASS,FAIL,,,
+d6eeb2,c45,"I've put in a request to shift your trip to Rome a few days later, with a change fee of $30. A member of our team will confirm this change soon. Thank you for your understanding!",FAIL,PASS,,,
+57bb07,c12,"I've put your refund of $640 on the waiting list for approval. Unfortunately, I can't send the money directly; a team member will review and process it. Thank you for your patience!",PASS,PASS,,,
+fc89ff,c07,Your request to move your Madrid trip one week later is on the waiting list for approval. There is a fee of $30 for this change.,PASS,PASS,,,
+b74e67,c23,Please provide your booking ID so I can check the cancellation policy and the potential refund amount for your trip.,PASS,PASS,,,
+e520e6,c11,"Your refund for booking NT-7120 is on the waiting list and will be approved by a team member. Since the airline cancelled your flight, you're eligible for a full refund of $830. ",PASS,PASS,,,
+b609e2,c41,It seems there is no booking with the ID NT-7021. Please verify the booking number and provide the correct one so I can assist you further.,PASS,PASS,,,

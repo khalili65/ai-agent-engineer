@@ -1,0 +1,28 @@
+# The eval gate for the support agent, as a GitHub Actions workflow.
+# It is NOT active here. To turn it on:
+#   1. copy this file to .github/workflows/eval-gate.yml (in the root of the repository)
+#   2. add the repository secret OPENAI_API_KEY (Settings > Secrets and variables > Actions)
+# One run costs about one cent with gpt-4o-mini (16 cases, 2 trials each, plus the judge).
+name: Eval gate
+
+on:
+  pull_request:
+    paths:
+      - "sessions/4.7-improvement-loop/**"
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+
+      - name: Install the project
+        run: uv sync --locked
+
+      - name: Run the regression suite
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: uv run python sessions/4.7-improvement-loop/ci_gate.py

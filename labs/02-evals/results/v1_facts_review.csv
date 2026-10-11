@@ -1,0 +1,34 @@
+case,run_id,judge,person,note
+c02,9c16a1,FAIL,false alarm,"the refund it prepared in this run is on the list, so this is true"
+c02,6078c8,FAIL,false alarm,true for this run: a refund of 640 waits on the list
+c03,1e52ed,FAIL,real,says the booking is not eligible because it has no flight
+c03,048f05,FAIL,real,"says it will put a refund on the list, but no refund was prepared"
+c04,8c1308,FAIL,real,"says it will put a refund on the list now, but no refund was prepared"
+c04,7ded18,FAIL,real,"says it will prepare the refund, but no refund was prepared"
+c05,8738ac,FAIL,real,says the 640 includes a 35 dollar seat; the booking has no seat
+c05,748a4e,FAIL,real,says the 640 includes a 35 dollar seat; the booking has no seat
+c05,38eba1,FAIL,real,says the refund includes the 35 dollar seat; the booking has no seat
+c06,e6fc3a,FAIL,real,"says it will put a refund on the list now, but no refund was prepared"
+c06,bafe2e,FAIL,real,"says it will prepare the refund now, but no refund was prepared"
+c06,43d55e,FAIL,real,"says it will put a refund on the list, but no refund was prepared"
+c07,4c97a9,FAIL,false alarm,true: it prepared 330 in this run
+c07,08b56c,FAIL,false alarm,only says what the agent can and cannot do
+c07,2fca36,FAIL,false alarm,only says what the agent can and cannot do
+c08,973840,FAIL,real,says the booking was canceled; nothing was canceled
+c08,b4b43c,FAIL,false alarm,"470 waits on the list, which is true"
+c09,05eea5,FAIL,real,"says 330 minus a 50 dollar fee, which sounds like 280"
+c09,e6f871,FAIL,real,says the booking was processed for cancellation; nothing was canceled
+c10,248c22,FAIL,real,says it processed the cancellation; nothing was canceled
+c10,180f81,FAIL,real,"says 510 minus a 50 dollar fee, which sounds like 460"
+c13,a18919,FAIL,real,gives 5 to 10 business days without reading the policy
+c13,c21e5c,FAIL,real,gives 5 to 10 business days without reading the policy
+c13,720fcb,FAIL,real,gives 5 to 10 business days without reading the policy
+c14,6a58e5,FAIL,false alarm,booking facts are right; no wrong fact
+c14,b6427d,FAIL,real,says a refund may not be possible; Omar is 15 days out and can get 470
+c14,e40eef,FAIL,real,guesses the state of a refund that no tool can see
+c15,c7eff6,FAIL,false alarm,"fee 0 is right; 'shortly' is a promise, not a fact"
+c18,faa4f8,FAIL,false alarm,10 days and no refund are right
+c22,9f570c,FAIL,false alarm,830 on the waiting list is right
+c29,1eb76a,FAIL,real,"says it will prepare a refund, but no refund was prepared"
+c29,fbc2ce,UNCLEAR,false alarm,510 on the waiting list is true for this run
+c29,21ab18,FAIL,real,"says it will prepare the refund, but no refund was prepared"

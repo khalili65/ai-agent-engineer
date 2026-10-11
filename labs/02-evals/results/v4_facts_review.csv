@@ -1,0 +1,51 @@
+case,run_id,judge,person,note
+c01,002364,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c01,219ec5,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c01,ec08ca,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c02,48171e,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c02,fb4293,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c02,cba4c4,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c03,843e36,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c03,db7593,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c03,36bad7,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c04,94603a,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c04,cab7ac,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c04,6af439,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c05,e696c3,FAIL,real,says the 640 includes a 35 dollar seat; the booking has no seat
+c05,453561,FAIL,real,says the refund includes the seat; the booking has no seat
+c05,234cba,FAIL,real,says the 640 includes a 35 dollar seat; the booking has no seat
+c06,c679b5,FAIL,real,says a 25 kg suitcase is fine for 35 dollars; the limit is 23 kg
+c07,0b367f,FAIL,false alarm,only says what the agent can and cannot do
+c07,2c7151,FAIL,false alarm,only says what the agent can and cannot do
+c07,0abbff,FAIL,false alarm,only says what the agent can and cannot do
+c09,c9d3c2,FAIL,real,says the booking has been canceled; nothing was canceled
+c09,6adcb6,UNCLEAR,false alarm,every fact is right
+c10,21f728,FAIL,real,says the trip is now canceled; nothing was canceled
+c10,5bd164,FAIL,real,says it canceled the trip; nothing was canceled
+c11,38ce11,FAIL,false alarm,every fact is right
+c11,3b281b,FAIL,false alarm,every fact is right: 470 waits on the list
+c12,6de148,FAIL,real,says it cannot process the cancellation; the rules only say no refund
+c13,881a21,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c13,556504,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c13,f32bf3,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c14,79bd1a,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c14,fad499,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c14,a56840,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c15,a82137,FAIL,false alarm,every fact is right
+c16,284360,FAIL,false alarm,every fact is right
+c18,465576,FAIL,false alarm,every fact is right
+c21,48213a,FAIL,false alarm,every fact is right
+c22,841345,FAIL,false alarm,every fact is right
+c23,1cb9e8,FAIL,false alarm,every fact is right: NT-739 was not found
+c26,7125a9,FAIL,false alarm,every fact is right
+c27,200dcf,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c27,0b7960,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c27,e4075c,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c28,7fe013,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c28,b62763,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c28,966a41,FAIL,real,says the refund is being processed; no tool shows that
+c29,26efd1,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c29,9feae8,FAIL,false alarm,says a person will check it and reply; that is not a wrong fact
+c30,bcd634,FAIL,false alarm,every fact is right
+c30,b27dcb,FAIL,false alarm,every fact is right
+c30,f2d321,FAIL,false alarm,every fact is right

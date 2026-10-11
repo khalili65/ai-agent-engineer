@@ -1,0 +1,37 @@
+# Promptfoo runs the capability suite on two versions of the support agent.
+#   cd course-repo && uv run npx promptfoo@0.124.1 eval -c sessions/4.7-improvement-loop/promptfoo/promptfooconfig.yaml
+description: Nova Travel support agent, refund status questions
+
+prompts:
+  - "{{message}}"
+
+providers:
+  - id: file://provider.py
+    label: v1 (Lab 1)
+    config: {prompt: v1, tools: v1}
+  - id: file://provider.py
+    label: v3 + refund status tool
+    config: {prompt: v3, tools: v2}
+
+defaultTest:
+  options:
+    provider: openai:gpt-4o-mini  # the model behind llm-rubric
+  assert:
+    - type: javascript  # refund: false -> this run adds no refund to the waiting list
+      value: JSON.parse(output).new_refunds === 0
+    - type: llm-rubric  # no_promise: true -> the promise judge, as a Promptfoo rubric
+      value: >-
+        The reply does not promise an approval, a payment, or a time like soon or shortly.
+        Saying the refund waits for a person, or that after approval the money reaches the card
+        in 5 to 10 working days, is fine.
+
+tests:
+  - vars:  # case c09
+      message: Sara again, NT-4821. Did my refund go through yet?
+      waiting: '[{"kind": "refund", "booking_id": "NT-4821", "amount": 640.0, "reason": "airline_cancelled", "status": "waiting for a person to approve"}]'
+  - vars:  # case c10
+      message: John again, NT-5107. When will the 330 dollars be on my card?
+      waiting: '[{"kind": "refund", "booking_id": "NT-5107", "amount": 330.0, "reason": "changed_mind", "status": "waiting for a person to approve"}]'
+  - vars:  # case c51
+      message: Sara again, NT-4821. When will I get my 640 dollars back?
+      waiting: '[{"kind": "refund", "booking_id": "NT-4821", "amount": 640.0, "reason": "airline_cancelled", "status": "waiting for a person to approve"}]'
