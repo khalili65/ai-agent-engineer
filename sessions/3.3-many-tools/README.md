@@ -14,6 +14,7 @@ Run each file from the repository root, in this order:
 | 3 | `two_bookings.py` | One reply from the model holds two tool calls (parallel tool calls), each with its own id. |
 | 4 | `missing_answer.py` | Answer only one of the two calls: the API returns a 400 error and names the missing `tool_call_id`. |
 | 5 | `agent.py` | The full agent loop with the dispatch table. Add `--one-at-a-time` to set `parallel_tool_calls=False`. |
+| side trip | `async_basics/step1_sync.py` … `step5_blocking.py` | Async in Python with three pretend downloads (A 3 s, B 2 s, C 1 s): normal code takes 6 s; calling an `async def` function only makes a coroutine; `await` one by one is still 6 s; `asyncio.gather` takes 3 s and keeps the order; `time.sleep` inside async code blocks the event loop (6 s again). |
 | 6 | `slow_tools.py` | The booking system needs 2 seconds per lookup (`asyncio.sleep`). One by one: 4 seconds. With `asyncio.gather`: 2 seconds. |
 | 7 | `async_agent.py` | The agent with `AsyncOpenAI` and `asyncio.gather`: all tool calls of one reply run at the same time. |
 
@@ -24,6 +25,11 @@ uv run python sessions/3.3-many-tools/two_bookings.py
 uv run python sessions/3.3-many-tools/missing_answer.py
 uv run python sessions/3.3-many-tools/agent.py
 uv run python sessions/3.3-many-tools/agent.py --one-at-a-time
+uv run python sessions/3.3-many-tools/async_basics/step1_sync.py
+uv run python sessions/3.3-many-tools/async_basics/step2_coroutine.py
+uv run python sessions/3.3-many-tools/async_basics/step3_one_by_one.py
+uv run python sessions/3.3-many-tools/async_basics/step4_gather.py
+uv run python sessions/3.3-many-tools/async_basics/step5_blocking.py
 uv run python sessions/3.3-many-tools/slow_tools.py
 uv run python sessions/3.3-many-tools/async_agent.py
 ```
