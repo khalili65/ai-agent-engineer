@@ -11,6 +11,8 @@ and then compares a big raw tool answer with a short one.
 | `tools_v1.py` | Tools made in a hurry: vague names (`get_data`, `rules`, `refund`), no descriptions, every argument loose text, three overlapping price/city/dates tools. |
 | `tools_v2.py` | Three designed tools: `find_booking`, `get_refund_rules`, `prepare_refund`. Clear names, descriptions that say when to use each tool, strict schemas (`pattern`, `number`, `enum`). |
 | `agent.py` | One agent loop for any tool set. Writes a JSONL trace to `traces/`. |
+| `tools_steps.py` | Version one, then one fix at a time: step1 a described booking_id input, step2 one find_booking tool that sends back what the agent needs, step3 an honest prepare_refund tool. |
+| `one_fix.py` | Runs one customer message five times with the tools of one step (`v1`, `step1`, `step2`, `step3`). |
 | `test_tools.py` | Runs the six messages five times and counts right results, wrong tool calls and argument errors. |
 | `show_tools.py` | Prints exactly what the model reads for one tool (`v1 get_booking_price`, `v2 find_booking`). |
 | `show_trace.py` | Prints one run of a test, step by step, from its trace file: each tool call, what the tool sent back, and the answer. |
@@ -18,6 +20,12 @@ and then compares a big raw tool answer with a short one.
 | `response_size.py` | Same tools v2, but `find_booking` returns the raw record (`detailed`) or the short one (`concise`). |
 
 ```bash
+uv run python sessions/3.4-tool-design/one_fix.py v1 sara_flight
+uv run python sessions/3.4-tool-design/one_fix.py step1 sara_flight
+uv run python sessions/3.4-tool-design/one_fix.py step1 john_refund
+uv run python sessions/3.4-tool-design/one_fix.py step2 john_refund
+uv run python sessions/3.4-tool-design/one_fix.py step2 sara_refund
+uv run python sessions/3.4-tool-design/one_fix.py step3 sara_refund
 uv run python sessions/3.4-tool-design/test_tools.py v1
 uv run python sessions/3.4-tool-design/test_tools.py v2
 uv run python sessions/3.4-tool-design/show_tools.py v1 get_booking_price
